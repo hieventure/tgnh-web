@@ -1,0 +1,31 @@
+:root {
+  --pink: #e33d8b;
+  --pink-dark: #c91f70;
+  --pink-soft: #ffc3c5;
+  --pink-pale: #fdf3f4;
+  --ink: #111;
+  --muted: #898484;
+  --border: #eee9eb;
+  --content: 1120px;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); font-family: Roboto, Arial, Helvetica, sans-serif; background: #fff; }
+a { color: inherit; text-decoration: none; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { font: inherit; }
+.content-container { width: min(calc(100% - 32px), var(--content)); margin-inline: auto; }
+.component-error { margin: 0; padding: 12px; color: #fff; text-align: center; background: #a00; }
+.section-title { margin-bottom: 12px; }
+.section-title p { margin: 0 0 5px; color: var(--pink); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.section-title h2 { margin: 0; font-size: 24px; font-weight: 700; }
+
+@media (max-width: 575.98px) {
+  .content-container { width: min(calc(100% - 24px), var(--content)); }
+  .section-title h2 { font-size: 20px; line-height: 1.15; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
