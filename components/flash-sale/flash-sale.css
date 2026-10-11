@@ -9,6 +9,7 @@
 .flash-sale .section-title { position: absolute; z-index: 2; top: 12px; right: 16px; left: 16px; display: flex; align-items: flex-start; justify-content: space-between; margin: 0; }
 .flash-sale .content-container { position: relative; }
 .flash-sale__logo { width: 258px; height: 55px; object-fit: contain; }
+.flash-sale__mobile-title { display: none; }
 .flash-sale__meta { display: flex; flex-direction: column; align-items: flex-end; }
 .flash-sale__meta > a { font-size: 10px; font-weight: 800; text-transform: uppercase; }
 .sale-timer { display: flex; align-items: center; gap: 5px; margin-bottom: 7px; color: var(--pink); font-size: 10px; font-style: normal; font-weight: 800; text-transform: uppercase; white-space: nowrap; }
@@ -22,11 +23,17 @@
 
 @media (max-width: 575.98px) {
   .flash-sale { padding-top: 20px; }
+  .flash-sale .content-container { width: calc(100% - 20px); }
   .flash-sale .campaign-banner { display: none; }
-  .flash-sale .section-title { position: static; display: block; }
-  .flash-sale__logo { width: 180px; height: auto; margin-bottom: 10px; }
-  .flash-sale__meta { align-items: flex-start; }
+  .flash-sale .section-title { position: static; display: block; margin-bottom: 12px; }
+  .flash-sale__logo, .flash-sale__meta { display: none; }
+  .flash-sale__mobile-title { display: block; margin: 0; font-size: 24px; font-weight: 700; line-height: 1.15; }
   .flash-sale__panel { display: block; padding: 0; overflow: visible; }
   .flash-sale__background, .flash-sale__campaign { display: none; }
-  .flash-sale__panel .product-carousel__track > .product-card { flex-basis: calc((100% - 7px) / 2); min-height: 300px; }
+  .flash-sale__panel .product-carousel__track { display: grid; margin-inline: 0; overflow: visible; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; scroll-snap-type: none; }
+  .flash-sale__panel .product-carousel__track > .product-card { min-height: 300px; }
+  .flash-sale__panel .product-carousel__track > .product-card:nth-child(n + 5) { display: none; }
+  .flash-sale .product-carousel__control { display: none !important; }
+  .flash-sale .product-link { padding: 5px 24px; border-radius: 999px; font-size: 12px; }
+  .flash-sale .explore-link { padding: 32px 0; font-size: 12px; }
 }
