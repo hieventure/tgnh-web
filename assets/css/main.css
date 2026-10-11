@@ -18,7 +18,7 @@ button { font: inherit; }
 .content-container { width: min(calc(100% - 32px), var(--content)); margin-inline: auto; }
 .component-error { margin: 0; padding: 12px; color: #fff; text-align: center; background: #a00; }
 .section-title { margin-bottom: 12px; }
-.section-title p { margin: 0 0 5px; color: var(--pink); font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.section-title p { display: none; margin: 0 0 5px; color: var(--pink); font-size: 10px; font-weight: 800; text-transform: uppercase; }
 .section-title h2 { margin: 0; font-size: 24px; font-weight: 700; }
 
 @media (max-width: 575.98px) {

@@ -315,14 +315,21 @@
   </head>
   <body>
     <header class="site-header">
-  <div class="promo-bar">
+  <div class="temporary-header">
+    <picture>
+      <source media="(max-width: 991.98px)" srcset="assets/images/header/header-placeholder-mobile.png">
+      <img src="assets/images/header/header-placeholder.png" alt="Hệ thống phân phối nước hoa và mỹ phẩm chính hãng">
+    </picture>
+  </div>
+
+  <div class="promo-bar header-original" hidden inert aria-hidden="true">
     <div class="container-xxl d-flex justify-content-between align-items-center gap-3">
       <p class="mb-0">Thương chào bạn đến với Hệ thống phân phối nước hoa và mỹ phẩm <strong>CHÍNH HÃNG</strong>, với <strong>55 CỬA HÀNG</strong> trên toàn quốc</p>
       <a class="promo-phone" href="tel:1900636865"><img src="assets/design-0610/vjcissj3_expires_30_days.png" alt=""><span>CSKH: <strong>1900 636865</strong></span></a>
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg header-navbar py-0" aria-label="Điều hướng chính">
+  <nav class="navbar navbar-expand-lg header-navbar header-original py-0" aria-label="Điều hướng chính" hidden inert aria-hidden="true">
     <div class="container-xxl header-main">
       <a class="brand" href="/" aria-label="Thế Giới Nước Hoa">
         <picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/r3lmskoa_expires_30_days.png"><img src="assets/design-0610/san9o2cg_expires_30_days.png" alt="Thế Giới Nước Hoa"></picture>
@@ -360,7 +367,7 @@
     </div>
   </nav>
 
-  <nav class="mobile-shortcuts d-lg-none" aria-label="Danh mục mobile">
+  <nav class="mobile-shortcuts header-original d-lg-none" aria-label="Danh mục mobile" hidden inert aria-hidden="true">
     <a class="mobile-shortcut mobile-shortcut--store" href="/he-thong-cua-hang/"><img src="assets/design-mobile/79rhh5ka_expires_30_days.png" alt=""><span>Hệ thống<br>cửa hàng</span></a>
     <button class="mobile-shortcut" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation" aria-controls="mainNavigation" aria-expanded="false">Danh mục</button>
     <a class="mobile-shortcut" href="#flash-sale">Chỉ từ 500K</a>
@@ -369,7 +376,7 @@
     <a class="mobile-shortcut" href="/danh-muc/my-pham/">Mỹ phẩm</a>
   </nav>
 
-  <div class="navigation-shell d-none d-lg-block">
+  <div class="navigation-shell header-original d-none d-lg-block" hidden inert aria-hidden="true">
     <nav class="category-nav" aria-label="Danh mục sản phẩm">
       <div class="container-xxl d-flex justify-content-around">
         <button class="category-nav__toggle" type="button" data-menu-target="categories" aria-controls="navigation-menu-categories" aria-expanded="false">Nước hoa</button>
@@ -430,10 +437,13 @@
   <section id="heroCarousel" class="hero-carousel carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" aria-label="Ưu đãi nổi bật" aria-roledescription="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a class="hero-campaign" href="#flash-sale">
-          <picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/n5llrxsj_expires_30_days.png"><img class="hero-image" src="assets/design-0810/xz6zazdg_expires_30_days.png" alt="Mừng Ngày Của Nàng, trao ngàn ưu đãi"></picture>
-          <h1 class="visually-hidden">Mừng ngày của Nàng - Ngập tràn ưu đãi</h1>
-        </a>
+        <a class="hero-campaign" href="#flash-sale"><img class="hero-image" src="assets/images/hero-carousel/invoice-gifts-20261011.png" alt="Quà tặng theo hóa đơn"><h1 class="visually-hidden">Quà tặng theo hóa đơn</h1></a>
+      </div>
+      <div class="carousel-item">
+        <a class="hero-campaign" href="#exclusive"><img class="hero-image" src="assets/images/hero-carousel/exclusive-gift-sets-20261011.png" alt="Bộ quà tặng độc quyền"></a>
+      </div>
+      <div class="carousel-item">
+        <a class="hero-campaign" href="#flash-sale"><img class="hero-image" src="assets/images/hero-carousel/womens-day-offers-20261011.png" alt="Mừng Ngày Của Nàng, trao ngàn ưu đãi"></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev"><img src="assets/design-0610/pnv23h3e_expires_30_days.png" alt=""><span class="visually-hidden">Ưu đãi trước</span></button>
@@ -456,23 +466,27 @@
       <section class="flash-sale" id="flash-sale">
   <div class="content-container">
     <header class="section-title">
-      <div class="sale-timer" aria-label="Khung giờ vàng từ 09 giờ 09 đến 09 giờ 09">
-        <span>Chỉ còn 1 ngày</span><b>05</b>:<b>23</b>:<b>15</b>
+      <img class="flash-sale__logo" src="assets/design-0810/167hf6qt_expires_30_days.png" alt="Flash Sale">
+      <div class="flash-sale__meta">
+        <div class="sale-timer" aria-label="Chỉ còn 1 ngày 05 giờ 23 phút 15 giây">
+          <span>Chỉ còn 1 ngày</span><b>05</b>:<b>23</b>:<b>15</b>
+        </div>
+        <a href="/danh-muc/khuyen-mai/">Xem tất cả</a>
       </div>
       <h2 class="visually-hidden">Ưu đãi 20.10 - Độc quyền tại website</h2>
     </header>
     <div class="flash-sale__panel">
       <img class="flash-sale__background" src="assets/design-0810/blfcxebb_expires_30_days.png" alt="">
+      <a class="flash-sale__campaign" href="#exclusive"><img src="assets/design-0810/rca9vjct_expires_30_days.png" alt="Ưu đãi đặc biệt tặng người thương 20.10"></a>
       <div class="product-carousel" data-product-carousel>
       <button class="product-carousel__control product-carousel__control--prev btn" type="button" aria-label="Sản phẩm trước" aria-controls="flashSaleProducts" data-product-carousel-prev><img src="assets/design-0610/cd7x7cs2_expires_30_days.png" alt=""></button>
       <div class="product-grid product-carousel__track" id="flashSaleProducts" data-product-carousel-track role="region" aria-label="Sản phẩm ưu đãi" tabindex="0">
-      <a class="flash-sale__campaign" href="#exclusive"><img src="assets/design-0810/rca9vjct_expires_30_days.png" alt="Ưu đãi đặc biệt tặng người thương 20.10"></a>
-      <article class="product-card"><span class="badge-sale">Chỉ còn 5 sp</span><img src="assets/design-0810/7igr3gmj_expires_30_days.png" alt="Signoria"><h3>Sale</h3><p>Signoria</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/signorina-misteriosa/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0810/o9k05qka_expires_30_days.png" alt="Paco Rabanne"><h3>Sale</h3><p>Paco Rabanne</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/paco-rabanne/">Mua ngay</a></article>
-      <article class="product-card"><span class="badge-sale">Chỉ còn 1 ngày</span><img src="assets/design-0810/q9lypfo0_expires_30_days.png" alt="Moschino"><h3>Sale</h3><p>Moschino</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/moschino-toy-2/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0810/j1pkks81_expires_30_days.png" alt="Michael Kors Gorgeous"><h3>Sale</h3><p>Michael Kors Gorgeous</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/michael-kors-gorgeous/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/sz17nqrr_expires_30_days.png" alt="Salvatore Ferragamo Uomo Signature"><h3>Sale</h3><p>Salvatore Ferragamo Uomo Signature</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/ferragamo-uomo/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/wfymoxwt_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml"><h3>Sale</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">Chỉ còn 5 sp</span><img src="assets/design-0810/7igr3gmj_expires_30_days.png" alt="Signoria"><h3>Sale</h3><p>Signoria</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/signorina-misteriosa/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0810/o9k05qka_expires_30_days.png" alt="Paco Rabanne"><h3>Sale</h3><p>Paco Rabanne</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/paco-rabanne/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">Chỉ còn 1 ngày</span><img src="assets/design-0810/q9lypfo0_expires_30_days.png" alt="Moschino"><h3>Sale</h3><p>Moschino</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/moschino-toy-2/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0810/j1pkks81_expires_30_days.png" alt="Michael Kors Gorgeous"><h3>Sale</h3><p>Michael Kors Gorgeous</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/michael-kors-gorgeous/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/sz17nqrr_expires_30_days.png" alt="Salvatore Ferragamo Uomo Signature"><h3>Sale</h3><p>Salvatore Ferragamo Uomo Signature</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/ferragamo-uomo/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/wfymoxwt_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml"><h3>Sale</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
       </div>
       <button class="product-carousel__control product-carousel__control--next btn" type="button" aria-label="Sản phẩm tiếp theo" aria-controls="flashSaleProducts" data-product-carousel-next><img src="assets/design-0610/cd7x7cs2_expires_30_days.png" alt=""></button>
       </div>
@@ -483,38 +497,46 @@
 
       <section class="brands" aria-labelledby="brands-title">
   <div class="content-container">
-    <header class="section-title"><h2 id="brands-title">Hội tụ thương hiệu hàng đầu</h2></header>
-    <div id="brandCarousel" class="brand-carousel carousel slide" data-bs-ride="carousel" data-bs-interval="5000" data-bs-pause="hover" aria-label="Thương hiệu nổi bật" aria-roledescription="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active"><div class="brand-cloud">
-          <img src="assets/design-0810/osot0m0v_expires_30_days.png" alt="Versace">
-          <img src="assets/design-0810/cpdd5hzt_expires_30_days.png" alt="Dolce &amp; Gabbana">
-          <img src="assets/design-0810/9ngarvds_expires_30_days.png" alt="Gucci">
-          <img src="assets/design-0810/1srwdsx4_expires_30_days.png" alt="Burberry">
-          <img src="assets/design-0810/bz3vyb64_expires_30_days.png" alt="Moroccanoil">
-          <img src="assets/design-0810/59wj523h_expires_30_days.png" alt="Victoria's Secret">
-          <img src="assets/design-0810/8veb6w43_expires_30_days.png" alt="Givenchy">
-        </div></div>
+    <header class="section-title"><p>Thương hiệu chính hãng</p><h2 id="brands-title"><span class="brand-title--desktop">Hội tụ thương hiệu hàng đầu</span><span class="brand-title--mobile">Hội tụ các hãng nước hoa hàng đầu</span></h2></header>
+    <div class="brand-carousel" role="region" aria-label="Thương hiệu nổi bật">
+      <div class="brand-carousel__track">
+        <div class="brand-cloud">
+          <span class="brand-cloud__item"><img src="assets/design-0810/osot0m0v_expires_30_days.png" alt="Versace"></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/cpdd5hzt_expires_30_days.png" alt="Dolce &amp; Gabbana"></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/9ngarvds_expires_30_days.png" alt="Gucci"></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/1srwdsx4_expires_30_days.png" alt="Burberry"></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/bz3vyb64_expires_30_days.png" alt="Moroccanoil"></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/59wj523h_expires_30_days.png" alt="Victoria's Secret"></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/8veb6w43_expires_30_days.png" alt="Givenchy"></span>
+          <span class="brand-cloud__item brand-cloud__item--mobile-fill" aria-hidden="true"><img src="assets/design-0810/osot0m0v_expires_30_days.png" alt=""></span>
+        </div>
+        <div class="brand-cloud" aria-hidden="true">
+          <span class="brand-cloud__item"><img src="assets/design-0810/osot0m0v_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/cpdd5hzt_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/9ngarvds_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/1srwdsx4_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/bz3vyb64_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/59wj523h_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item"><img src="assets/design-0810/8veb6w43_expires_30_days.png" alt=""></span>
+          <span class="brand-cloud__item brand-cloud__item--mobile-fill"><img src="assets/design-0810/osot0m0v_expires_30_days.png" alt=""></span>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev"><img src="assets/design-0610/sy10vovc_expires_30_days.png" alt=""><span class="visually-hidden">Nhóm thương hiệu trước</span></button>
-      <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next"><img src="assets/design-0610/sy10vovc_expires_30_days.png" alt=""><span class="visually-hidden">Nhóm thương hiệu tiếp theo</span></button>
-      <button class="carousel-toggle" type="button" data-carousel-toggle aria-label="Tạm dừng tự động chuyển"><span data-pause-icon aria-hidden="true">Ⅱ</span><span data-play-icon class="d-none" aria-hidden="true">▶</span></button>
     </div>
   </div>
 </section>
 
       <section class="favorites" id="favorites">
   <div class="content-container">
-    <header class="section-title"><p>Bán chạy nhất</p><h2>Nốt hương được yêu thích trong tháng</h2></header>
+    <header class="section-title"><p>Bán chạy nhất</p><h2>Nốt hương yêu thích trong tháng</h2></header>
     <div class="product-carousel" data-product-carousel>
       <button class="product-carousel__control product-carousel__control--prev btn" type="button" aria-label="Sản phẩm trước" aria-controls="favoriteProducts" data-product-carousel-prev><img src="assets/design-0610/n78fsrn2_expires_30_days.png" alt=""></button>
       <div class="product-grid product-carousel__track" id="favoriteProducts" data-product-carousel-track role="region" aria-label="Sản phẩm bán chạy" tabindex="0">
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/vv0ybm55_expires_30_days.png"><img src="assets/design-0810/1cck7m3x_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/c35m131y_expires_30_days.png"><img src="assets/design-0810/22pxjzb5_expires_30_days.png" alt="Lomani Private Collection Blanca Fantasy"></picture><h3>Parour</h3><p>Lomani Private Collection Blanca Fantasy</p><del>1.329.000đ (-20%)</del><strong>1.064.000đ</strong><a class="product-link" href="/san-pham/lomani-blanca-fantasy/">Mua ngay</a></article>
-      <article class="product-card"><span class="badge-sale">New</span><span class="product-seal"><img src="assets/design-0810/9x26li2l_expires_30_days.png" alt=""></span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/mh8sonn3_expires_30_days.png"><img src="assets/design-0810/qvribiyc_expires_30_days.png" alt="Lomani Private Collection Silver Bloom"></picture><h3>Parour</h3><p>Lomani Private Collection Silver Bloom EDP</p><del>1.329.000đ (-20%)</del><strong>1.064.000đ</strong><a class="product-link" href="/san-pham/lomani-silver-bloom/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/xnnp1fij_expires_30_days.png"><img src="assets/design-0810/t8zs4hvo_expires_30_days.png" alt="Miss Saigon Elegance Cam 50ml"></picture><h3>Miss Saigon</h3><p>Miss Saigon Elegance Cam 50ml Eau de Parfum</p><del>720.000đ (-10%)</del><strong>648.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance-cam/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0810/mapo76ih_expires_30_days.png" alt="Parour Mila's Secret Find Your Way"><h3>Parour</h3><p>Parour Mila's Secret Find Your Way</p><del>1.190.000đ (-20%)</del><strong>952.000đ</strong><a class="product-link" href="/san-pham/parour-milas-secret/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0810/83pd7jo4_expires_30_days.png" alt="Miss Saigon Elegance"><h3>Miss Saigon</h3><p>Miss Saigon Elegance Cam 50ml Eau de Parfum</p><del>720.000đ (-10%)</del><strong>648.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance-cam/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/vv0ybm55_expires_30_days.png"><img src="assets/design-0810/1cck7m3x_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/c35m131y_expires_30_days.png"><img src="assets/design-0810/22pxjzb5_expires_30_days.png" alt="Lomani Private Collection Blanca Fantasy"></picture><h3>Parour</h3><p>Lomani Private Collection Blanca Fantasy</p><div class="product-price-old"><del>1.329.000đ</del> <span>(-20%)</span></div><strong>1.064.000đ</strong><a class="product-link" href="/san-pham/lomani-blanca-fantasy/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">New</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/mh8sonn3_expires_30_days.png"><img src="assets/design-0810/qvribiyc_expires_30_days.png" alt="Lomani Private Collection Silver Bloom"></picture><h3>Parour</h3><p>Lomani Private Collection Silver Bloom EDP</p><div class="product-price-old"><del>1.329.000đ</del> <span>(-20%)</span></div><strong>1.064.000đ</strong><a class="product-link" href="/san-pham/lomani-silver-bloom/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/xnnp1fij_expires_30_days.png"><img src="assets/design-0810/t8zs4hvo_expires_30_days.png" alt="Miss Saigon Elegance Cam 50ml"></picture><h3>Miss Saigon</h3><p>Miss Saigon Elegance Cam 50ml Eau de Parfum</p><div class="product-price-old"><del>720.000đ</del> <span>(-10%)</span></div><strong>648.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance-cam/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0810/mapo76ih_expires_30_days.png" alt="Parour Mila's Secret Find Your Way"><h3>Parour</h3><p>Parour Mila's Secret Find Your Way</p><div class="product-price-old"><del>1.190.000đ</del> <span>(-20%)</span></div><strong>952.000đ</strong><a class="product-link" href="/san-pham/parour-milas-secret/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0810/83pd7jo4_expires_30_days.png" alt="Miss Saigon Elegance"><h3>Miss Saigon</h3><p>Miss Saigon Elegance Cam 50ml Eau de Parfum</p><div class="product-price-old"><del>720.000đ</del> <span>(-10%)</span></div><strong>648.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance-cam/">Mua ngay</a></article>
       </div>
       <button class="product-carousel__control product-carousel__control--next btn" type="button" aria-label="Sản phẩm tiếp theo" aria-controls="favoriteProducts" data-product-carousel-next><img src="assets/design-0610/n78fsrn2_expires_30_days.png" alt=""></button>
     </div>
@@ -525,10 +547,15 @@
       <section class="editorial" id="editorial">
   <div class="content-container">
     <header class="section-title"><p>Chỉ có tại Thế Giới Nước Hoa</p><h2>Tầng hương sang trọng độc quyền</h2></header>
-    <div class="editorial-grid">
+    <div class="editorial-grid editorial-grid--parked" aria-hidden="true">
       <article class="editorial-card editorial-card--rose"><picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/yzmqzott_expires_30_days.png"><img src="assets/design-0810/ugnplz52_expires_30_days.png" alt="Brand-New Huda Beauty"></picture><div><h3>Brand-New Huda Beauty</h3><p>Hương thơm lãng mạn, nồng nàn đậm chất nước Ý qua sự kết hợp tinh tế giữa nghệ tây và gỗ quý.</p></div></article>
       <article class="editorial-card editorial-card--dark"><picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/us19udp4_expires_30_days.png"><img src="assets/design-0810/4qej3wfy_expires_30_days.png" alt="Parour Spice Addict"></picture><div><h3>Parour Spice Addict</h3><p>Sức hút mê hoặc từ những nốt hương gia vị ấm áp, bí ẩn và tràn đầy năng lượng.</p></div></article>
       <article class="editorial-card editorial-card--sand"><picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/qu039l43_expires_30_days.png"><img src="assets/design-0810/ds9xu49u_expires_30_days.png" alt="Minus 417"></picture><div><h3>Minus 417</h3><p>Liệu trình chăm sóc cơ thể thư thái với khoáng chất Biển Chết và hương thơm tự nhiên dịu nhẹ.</p></div></article>
+    </div>
+    <div class="editorial-image-grid">
+      <img src="assets/images/editorial-temp/banner-birkholz.png" alt="Birkholz Perfume Manufacture">
+      <img src="assets/images/editorial-temp/banner-parour.png" alt="Parour Paris">
+      <img src="assets/images/editorial-temp/banner-417.png" alt="Minus 417 Beauty You Can Sense">
     </div>
     <p class="authenticity-strip">100% chính hãng xuất hoá đơn VAT — 100% chính hãng xuất hoá đơn VAT — 100% chính hãng xuất hoá đơn VAT</p>
   </div>
@@ -550,16 +577,16 @@
       <button type="button">Sắp xếp<img src="assets/design-0610/phwyh4hv_expires_30_days.png" alt=""></button>
     </div>
     <div class="product-grid product-grid--rows">
-      <article class="product-card"><span class="badge-sale">Chỉ còn 5 sp</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/51z7b4g4_expires_30_days.png"><img src="assets/design-0610/4s9bf3fo_expires_30_days.png" alt="Signoria"></picture><h3>Sale</h3><p>Signoria</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/signorina-misteriosa/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/rkcmd5jt_expires_30_days.png"><img src="assets/design-0610/muwy6icq_expires_30_days.png" alt="Paco Rabanne"></picture><h3>Sale</h3><p>Paco Rabanne</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/paco-rabanne/">Mua ngay</a></article>
-      <article class="product-card"><span class="badge-sale">Chỉ còn 1 ngày</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/e0cwaz0z_expires_30_days.png"><img src="assets/design-0610/6ohjl08z_expires_30_days.png" alt="Moschino"></picture><h3>Sale</h3><p>Moschino</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/moschino-toy-2/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/equpryx1_expires_30_days.png"><img src="assets/design-0610/5etrz60b_expires_30_days.png" alt="Michael Kors Gorgeous"></picture><h3>Sale</h3><p>Michael Kors Gorgeous</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/michael-kors-gorgeous/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/297g19c1_expires_30_days.png"><img src="assets/design-0610/oawrwabo_expires_30_days.png" alt="Salvatore Ferragamo Uomo Signature"></picture><h3>Sale</h3><p>Salvatore Ferragamo Uomo Signature</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/ferragamo-uomo/">Mua ngay</a></article>
-      <article class="product-card"><span class="badge-sale">Chỉ còn 5 sp</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/4mes3ihj_expires_30_days.png"><img src="assets/design-0610/hkaem47o_expires_30_days.png" alt="Signoria phiên bản hoa hồng"></picture><h3>Sale</h3><p>Signoria</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/signorina-misteriosa/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/pe621wlc_expires_30_days.png" alt="Paco Rabanne phiên bản hoa hồng"><h3>Sale</h3><p>Paco Rabanne</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/paco-rabanne/">Mua ngay</a></article>
-      <article class="product-card"><span class="badge-sale">Chỉ còn 1 ngày</span><img src="assets/design-0610/ah6rky18_expires_30_days.png" alt="Moschino phiên bản hoa hồng"><h3>Sale</h3><p>Moschino</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/moschino-toy-2/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/kkd0sbb6_expires_30_days.png" alt="Michael Kors Gorgeous phiên bản hoa hồng"><h3>Sale</h3><p>Michael Kors Gorgeous</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/michael-kors-gorgeous/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/1gcn7mq4_expires_30_days.png" alt="Salvatore Ferragamo Uomo Signature phiên bản hoa hồng"><h3>Sale</h3><p>Salvatore Ferragamo Uomo Signature</p><del>2.500.000đ (-39%)</del><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/ferragamo-uomo/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">Chỉ còn 5 sp</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/51z7b4g4_expires_30_days.png"><img src="assets/design-0610/4s9bf3fo_expires_30_days.png" alt="Signoria"></picture><h3>Sale</h3><p>Signoria</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/signorina-misteriosa/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/rkcmd5jt_expires_30_days.png"><img src="assets/design-0610/muwy6icq_expires_30_days.png" alt="Paco Rabanne"></picture><h3>Sale</h3><p>Paco Rabanne</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/paco-rabanne/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">Chỉ còn 1 ngày</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/e0cwaz0z_expires_30_days.png"><img src="assets/design-0610/6ohjl08z_expires_30_days.png" alt="Moschino"></picture><h3>Sale</h3><p>Moschino</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/moschino-toy-2/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/equpryx1_expires_30_days.png"><img src="assets/design-0610/5etrz60b_expires_30_days.png" alt="Michael Kors Gorgeous"></picture><h3>Sale</h3><p>Michael Kors Gorgeous</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/michael-kors-gorgeous/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/297g19c1_expires_30_days.png"><img src="assets/design-0610/oawrwabo_expires_30_days.png" alt="Salvatore Ferragamo Uomo Signature"></picture><h3>Sale</h3><p>Salvatore Ferragamo Uomo Signature</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/ferragamo-uomo/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">Chỉ còn 5 sp</span><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/4mes3ihj_expires_30_days.png"><img src="assets/design-0610/hkaem47o_expires_30_days.png" alt="Signoria phiên bản hoa hồng"></picture><h3>Sale</h3><p>Signoria</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/signorina-misteriosa/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/pe621wlc_expires_30_days.png" alt="Paco Rabanne phiên bản hoa hồng"><h3>Sale</h3><p>Paco Rabanne</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/paco-rabanne/">Mua ngay</a></article>
+      <article class="product-card"><span class="badge-sale">Chỉ còn 1 ngày</span><img src="assets/design-0610/ah6rky18_expires_30_days.png" alt="Moschino phiên bản hoa hồng"><h3>Sale</h3><p>Moschino</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/moschino-toy-2/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/kkd0sbb6_expires_30_days.png" alt="Michael Kors Gorgeous phiên bản hoa hồng"><h3>Sale</h3><p>Michael Kors Gorgeous</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/michael-kors-gorgeous/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/1gcn7mq4_expires_30_days.png" alt="Salvatore Ferragamo Uomo Signature phiên bản hoa hồng"><h3>Sale</h3><p>Salvatore Ferragamo Uomo Signature</p><div class="product-price-old"><del>2.500.000đ</del> <span>(-39%)</span></div><strong>1.190.000đ</strong><a class="product-link" href="/san-pham/ferragamo-uomo/">Mua ngay</a></article>
     </div>
     <a class="explore-link" href="/danh-muc/nuoc-hoa/">Khám phá thêm <picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/uiez82z5_expires_30_days.png"><img src="assets/design-0610/iycq65hq_expires_30_days.png" alt=""></picture></a>
     </div>
@@ -579,16 +606,16 @@
       <button type="button">Sắp xếp<img src="assets/design-0610/ry7n6u5c_expires_30_days.png" alt=""></button>
     </div>
     <div class="product-grid product-grid--rows">
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/anrji083_expires_30_days.png"><img src="assets/design-0610/vaaybvi3_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/4rptr4ok_expires_30_days.png"><img src="assets/design-0610/m7m9lef0_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu hồng"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/gxgyyquc_expires_30_days.png"><img src="assets/design-0610/6wzm1j3j_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu đỏ"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/fe4to0p7_expires_30_days.png"><img src="assets/design-0610/976ubbef_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu vàng"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/t564g1ff_expires_30_days.png"><img src="assets/design-0610/ycdjisc8_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu trắng"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/580co9qp_expires_30_days.png"><img src="assets/design-0610/man80isk_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 6"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/bxjlipz5_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 7"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/9wirlgoa_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 8"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/70wcythb_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 9"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
-      <article class="product-card"><img src="assets/design-0610/0b2n8eew_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 10"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><del>1.150.000đ (-10%)</del><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/anrji083_expires_30_days.png"><img src="assets/design-0610/vaaybvi3_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/4rptr4ok_expires_30_days.png"><img src="assets/design-0610/m7m9lef0_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu hồng"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/gxgyyquc_expires_30_days.png"><img src="assets/design-0610/6wzm1j3j_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu đỏ"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/fe4to0p7_expires_30_days.png"><img src="assets/design-0610/976ubbef_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu vàng"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/t564g1ff_expires_30_days.png"><img src="assets/design-0610/ycdjisc8_expires_30_days.png" alt="BST Miss Saigon Elegance 15ml màu trắng"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><picture class="product-picture"><source media="(max-width: 575.98px)" srcset="assets/design-mobile/580co9qp_expires_30_days.png"><img src="assets/design-0610/man80isk_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 6"></picture><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/bxjlipz5_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 7"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/9wirlgoa_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 8"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/70wcythb_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 9"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
+      <article class="product-card"><img src="assets/design-0610/0b2n8eew_expires_30_days.png" alt="BST Miss Saigon Elegance phiên bản 10"><h3>Miss Saigon</h3><p>BST Miss Saigon Elegance 15ml</p><div class="product-price-old"><del>1.150.000đ</del> <span>(-10%)</span></div><strong>1.035.000đ</strong><a class="product-link" href="/san-pham/miss-saigon-elegance/">Mua ngay</a></article>
     </div>
     <a class="explore-link" href="/bo-suu-tap/miss-saigon/">Khám phá thêm <picture><source media="(max-width: 575.98px)" srcset="assets/design-mobile/eaufx5df_expires_30_days.png"><img src="assets/design-0610/nn5lzb6b_expires_30_days.png" alt=""></picture></a>
     <nav class="scent-categories" aria-label="Danh mục hương thơm">
@@ -631,7 +658,6 @@
 </nav>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/carousel-controls.js"></script>
     <script src="assets/js/product-carousel.js"></script>
   </body>
 </html>

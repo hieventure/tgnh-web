@@ -22,3 +22,21 @@ document.querySelectorAll('[data-product-carousel]').forEach((carousel) => {
   window.addEventListener('resize', updateControls);
   updateControls();
 });
+
+document.querySelectorAll('.product-card').forEach((card) => {
+  const media = card.querySelector(':scope > img, :scope > .product-picture');
+  const productLink = card.querySelector('.product-link');
+  if (!media || !productLink) return;
+
+  const mediaFrame = document.createElement('div');
+  mediaFrame.className = 'product-media';
+  media.replaceWith(mediaFrame);
+  mediaFrame.append(media);
+
+  const quicklook = document.createElement('a');
+  quicklook.className = 'product-quicklook';
+  quicklook.href = productLink.getAttribute('href');
+  quicklook.textContent = 'Xem chi tiết';
+  quicklook.setAttribute('aria-label', `Xem chi tiết ${card.querySelector('p')?.textContent.trim() || 'sản phẩm'}`);
+  mediaFrame.append(quicklook);
+});
