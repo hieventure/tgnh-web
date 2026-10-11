@@ -1,0 +1,4 @@
+.perfume-knowledge { padding: 0 0 32px; }
+.knowledge-banner { display: block; overflow: hidden; border-radius: 4px; }
+.knowledge-banner picture { display: block; }
+.knowledge-banner img { display: block; width: 100%; min-height: 58px; object-fit: cover; }

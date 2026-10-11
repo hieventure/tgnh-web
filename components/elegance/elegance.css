@@ -1,0 +1,64 @@
+.elegance { padding: 32px 0; }
+.elegance .legacy-layout { display: none; }
+.scent-categories { display: grid; margin-top: 0; padding: 16px 36px; grid-template-columns: repeat(5, 1fr); border-radius: 6px; background: var(--pink-pale); }
+.scent-categories a { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0 12px; text-align: center; }
+.scent-categories img { width: 44px; height: 44px; object-fit: contain; }
+.scent-categories strong { font-size: 10px; }
+
+@media (max-width: 575.98px) {
+  .elegance { padding-block: 20px; }
+  .elegance .content-container { width: calc(100% - 16px); }
+  .elegance .desktop-design { display: none; }
+  .elegance .legacy-layout { display: block; }
+  .elegance .legacy-layout > .section-title { display: none; }
+  .elegance .filter-bar--overlay {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: grid;
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 18px 16px 28px;
+    border: 1px solid #d9dde1;
+    border-radius: 9px;
+    background: #fff;
+    grid-template-columns: repeat(2, minmax(0, 120px));
+    justify-content: space-between;
+    gap: 9px 0;
+  }
+  .elegance .filter-bar--overlay::before {
+    margin: 0 0 1px;
+    grid-column: 1 / -1;
+    color: #303034;
+    content: "BỘ SẢN PHẨM ĐỘC QUYỀN";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.15;
+  }
+  .elegance .filter-bar--overlay .filter-dropdown:nth-child(2) { display: none; }
+  .elegance .filter-dropdown,
+  .elegance .filter-dropdown summary,
+  .elegance .filter-all { width: 100%; min-width: 0; }
+  .elegance .filter-dropdown summary,
+  .elegance .filter-all {
+    height: 38px;
+    padding-inline: 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .elegance .filter-dropdown summary::after {
+    width: 10px;
+    height: 10px;
+    flex-basis: 10px;
+  }
+  .elegance .filter-dropdown__panel { width: min(340px, calc(100vw - 48px)); max-width: calc(100vw - 48px); }
+  .elegance .filter-dropdown:nth-child(1) .filter-dropdown__panel,
+  .elegance .filter-dropdown:nth-child(4) .filter-dropdown__panel { right: auto; left: 0; }
+  .elegance .filter-dropdown:nth-child(3) .filter-dropdown__panel,
+  .elegance .filter-dropdown:nth-child(5) .filter-dropdown__panel { right: 0; left: auto; }
+  .elegance .filter-all { justify-content: space-between; }
+  .elegance .filter-all svg { width: 18px; height: 18px; }
+  .elegance .product-card:nth-child(n + 7) { display: none; }
+  .scent-categories { padding-inline: 10px; grid-template-columns: repeat(5, minmax(74px, 1fr)); overflow-x: auto; }
+}
