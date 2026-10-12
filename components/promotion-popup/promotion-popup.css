@@ -4,7 +4,8 @@
 }
 
 .promotion-popup .modal-dialog {
-  width: min(90vw, calc((100vh - 40px) * 0.888), 660px);
+  width: min(90vw, calc((100vh - 40px) * 0.888), 594px);
+  width: min(90vw, calc((100dvh - 40px) * 0.888), 594px);
   max-width: none;
   margin: 20px auto;
 }
