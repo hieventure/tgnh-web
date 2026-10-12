@@ -22,8 +22,12 @@
     clone.inert = true;
     return clone;
   };
-  track.replaceChildren(cloneSlide(orderedSlides.at(-1)), ...orderedSlides, cloneSlide(orderedSlides[0]));
-  let currentIndex = 1;
+  const leadingClones = orderedSlides.slice(-2).map(cloneSlide);
+  const trailingClones = orderedSlides.slice(0, 2).map(cloneSlide);
+  const firstOriginalIndex = leadingClones.length;
+  const lastOriginalIndex = firstOriginalIndex + slides.length - 1;
+  track.replaceChildren(...leadingClones, ...orderedSlides, ...trailingClones);
+  let currentIndex = firstOriginalIndex;
 
   function setPosition(index, animate = false) {
     track.classList.toggle("is-animating", animate);
@@ -57,9 +61,9 @@
       if (settled) return;
       settled = true;
       track.classList.remove("is-animating");
-      currentIndex = targetIndex === 0
-        ? slides.length
-        : targetIndex === slides.length + 1 ? 1 : targetIndex;
+      currentIndex = targetIndex < firstOriginalIndex
+        ? targetIndex + slides.length
+        : targetIndex > lastOriginalIndex ? targetIndex - slides.length : targetIndex;
       if (currentIndex !== targetIndex) setPosition(currentIndex);
       updateActiveSlide();
       moving = false;

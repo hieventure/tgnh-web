@@ -5,12 +5,14 @@
 .brand-carousel { display: flex; width: 100vw; min-height: 124px; margin-left: calc(50% - 50vw); align-items: center; overflow: hidden; }
 .brand-carousel__track { display: flex; width: max-content; animation: brand-marquee 32s linear infinite; will-change: transform; }
 .brand-cloud { display: flex; width: max-content; height: 53px; flex: none; align-items: stretch; }
-.brand-cloud__item { position: relative; display: flex; height: 53px; flex: none; align-items: center; justify-content: center; margin-inline: 12px; padding-inline: 12px; }
-.brand-cloud__item:hover { outline: 2px solid #E33D8B; outline-offset: -2px; }
+.brand-cloud__item { position: relative; display: flex; height: 53px; flex: none; align-items: center; justify-content: center; margin-inline: 12px; padding-inline: 12px; border: 1px solid transparent; transition: border-color 200ms ease, box-shadow 300ms ease; }
+.brand-cloud__item:hover { z-index: 1; outline: 2px solid #E33D8B; outline-offset: -2px; background: #fff; box-shadow: 0 3px 8px rgb(0 0 0 / 12%); }
 .brand-cloud__item::after { position: absolute; top: 50%; right: -12px; width: 1px; height: 30px; background: #E7D3D3; content: ""; transform: translateY(-50%); }
 .brand-cloud img { display: block; width: auto; height: 53px; object-fit: contain; }
 
 @keyframes brand-marquee { to { transform: translateX(-50%); } }
+
+@media (hover: hover) { .brand-cloud__item:hover { border-color: #ef7daf; } }
 
 @media (prefers-reduced-motion: reduce) { .brand-carousel__track { animation-play-state: paused; } }
 
