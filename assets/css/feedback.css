@@ -1,0 +1,18 @@
+.brands .brand-cloud__item {
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+@media (hover: hover) {
+  .brands .brand-cloud__item:hover {
+    border-color: #ef7daf;
+  }
+}
+
+.product-card h3 {
+  font-weight: 700;
+}
+
+.product-card p {
+  font-weight: 400;
+}
