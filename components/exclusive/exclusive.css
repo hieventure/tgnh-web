@@ -1,11 +1,53 @@
 .exclusive { padding: 32px 0 0; }
-.desktop-design { display: block; width: 100%; height: auto; }
-.exclusive .legacy-layout { display: none; }
+.exclusive__heading { position: relative; z-index: 20; display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 26px; }
+.exclusive__title { margin: 0; color: #333; font-size: 24px; font-weight: 700; line-height: 1.2; white-space: nowrap; }
+.exclusive .filter-bar--overlay { position: static; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; }
+.exclusive .filter-dropdown, .exclusive .filter-dropdown__toggle, .exclusive .filter-all { width: 130px; min-width: 130px; }
+.exclusive .filter-dropdown { flex: 0 0 130px; }
+.exclusive .filter-all { flex: 0 0 130px; }
+.exclusive .filter-dropdown__toggle, .exclusive .filter-all { height: 42px; padding: 8px 12px; font-size: 12px; }
+.exclusive .filter-control__icon, .exclusive .filter-control__icon svg { width: 14px; height: 14px; }
+.exclusive .filter-control__icon { flex-basis: 14px; margin-left: 10px; }
+.exclusive__grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 16px; }
+.exclusive__banner { grid-column: span 2; min-width: 0; overflow: hidden; border-radius: 5px; }
+.exclusive__banner img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.exclusive-card { display: flex; min-width: 0; min-height: 310px; flex-direction: column; align-items: center; padding: 6px; border: 1px solid #e5e8ec; border-radius: 12px; text-align: center; background: #fff; }
+.exclusive-card__image { display: flex; width: 100%; align-items: center; justify-content: center; }
+.exclusive-card__image img { display: block; width: 72%; height: auto; aspect-ratio: 1; object-fit: contain; }
+.exclusive-card__name { display: -webkit-box; min-height: 36px; margin: 0 0 8px; overflow: hidden; color: #292d31; font-size: 14px; font-weight: 700; line-height: 1.25; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.exclusive-card__brand { margin-bottom: 10px; color: #707070; font-size: 11px; font-weight: 600; }
+.exclusive-card__old { display: flex; justify-content: center; gap: 8px; margin: 0 0 8px; white-space: nowrap; }
+.exclusive-card__old del { color: #999; font-size: 11px; }
+.exclusive-card__old span { color: #e62d87; font-size: 11px; }
+.exclusive-card__price { margin-bottom: 10px; color: #d82b80; font-size: 18px; line-height: 1; }
+.exclusive-card__buy { margin-top: auto; padding: 6px 14px; border-radius: 3px; color: #fff; font-size: 12px; font-weight: 700; line-height: 1.2; white-space: nowrap; background: #d6277c; }
+.exclusive-card__buy:hover, .exclusive-card__buy:focus-visible { color: #fff; background: #b91e68; }
+.exclusive-card a:focus-visible, .exclusive__banner:focus-visible { outline: 2px solid var(--pink); outline-offset: 2px; }
+
+@media (max-width: 1099.98px) {
+  .exclusive__heading { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .exclusive .filter-bar--overlay { width: 100%; }
+}
+
+@media (max-width: 991.98px) {
+  .exclusive__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .exclusive__banner { grid-column: 1 / -1; aspect-ratio: 16 / 9; }
+}
 
 @media (max-width: 575.98px) {
   .exclusive { padding-top: 20px; }
-  .exclusive .desktop-design { display: none; }
-  .exclusive .legacy-layout { display: block; }
-  .exclusive .campaign-banner { display: none; }
-  .exclusive .product-card:nth-child(n + 7) { display: none; }
+  .exclusive__heading { margin-bottom: 16px; }
+  .exclusive__title { font-size: 20px; line-height: 1.15; }
+  .exclusive .filter-dropdown, .exclusive .filter-all { width: calc(50% - 4px); min-width: 0; flex: 0 0 calc(50% - 4px); }
+  .exclusive .filter-dropdown__toggle { width: 100%; min-width: 0; }
+  .exclusive .filter-dropdown__panel { width: min(340px, calc(100vw - 20px)); }
+  .exclusive .filter-dropdown:nth-child(even) .filter-dropdown__panel { right: 0; left: auto; }
+  .exclusive-card { padding: 6px; }
+  .exclusive-card__image { height: 140px; }
+  .exclusive-card__name { min-height: 36px; font-size: 13px; }
+  .exclusive-card__brand { margin-bottom: 10px; font-size: 11px; }
+  .exclusive-card__old { gap: 4px; margin-bottom: 10px; }
+  .exclusive-card__old del, .exclusive-card__old span { font-size: 11px; }
+  .exclusive-card__price { margin-bottom: 12px; font-size: 17px; }
+  .exclusive-card__buy { padding: 7px 10px; font-size: 12px; }
 }

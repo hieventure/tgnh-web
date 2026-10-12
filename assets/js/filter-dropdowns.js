@@ -22,23 +22,14 @@
     { key: 'sort', label: 'Sắp xếp', items: ['Mới nhất', 'Bán chạy nhất', 'Giá tăng dần', 'Giá giảm dần'] }
   ];
 
-  document.querySelectorAll('.exclusive > .content-container, .elegance > .content-container').forEach((container) => {
-    if (container.querySelector('.filter-bar--overlay')) return;
+  document.querySelectorAll('.exclusive__heading').forEach((heading) => {
+    if (heading.querySelector('.filter-bar--overlay')) return;
 
     const bar = document.createElement('nav');
     bar.className = 'filter-bar filter-bar--overlay';
     bar.setAttribute('aria-label', 'Bộ lọc sản phẩm');
 
-    const title = document.createElement('h2');
-    title.className = 'filter-bar__title';
-    title.textContent = 'Bộ sản phẩm độc quyền';
-    bar.append(title);
-
-    const activeFilters = container.closest('.elegance')
-      ? filters.filter(({ key }) => key !== 'category')
-      : filters;
-
-    activeFilters.forEach(({ key, label, items }) => {
+    filters.forEach(({ key, label, items }) => {
       const dropdown = document.createElement('div');
       dropdown.className = `dropdown filter-dropdown filter-dropdown--${key}`;
 
@@ -99,12 +90,10 @@
 
     const viewAll = document.createElement('a');
     viewAll.className = 'btn custom-select text-main filter-all';
-    viewAll.href = container.closest('.exclusive')
-      ? 'https://www.thegioinuochoa.com.vn/ctkm-sale-up-to?f=i100-o322'
-      : 'https://www.thegioinuochoa.com.vn/ctkm-combo-sale?f=i100-o332';
+    viewAll.href = 'https://www.thegioinuochoa.com.vn/ctkm-sale-up-to?f=i100-o322';
     viewAll.innerHTML = 'Xem tất cả<span class="filter-control__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 12S6 6.5 12 6.5S21.5 12 21.5 12S18 17.5 12 17.5S2.5 12 2.5 12Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="2.8" stroke="currentColor" stroke-width="1.8"/></svg></span>';
     bar.append(viewAll);
-    container.prepend(bar);
+    heading.append(bar);
   });
 
 })();
