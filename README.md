@@ -21,8 +21,8 @@ Trang sản phẩm dùng thư mục theo slug `san-pham/michael-kors-gorgeous/in
 ## Cập nhật nội dung
 
 - **Nội dung trang chủ:** sửa `index.html`.
-- **Thông tin sản phẩm:** sửa trang tương ứng trong `san-pham/`. Thay tên, mô tả, ảnh và giá nhất quán trong nội dung trang và khối `application/ld+json` (dữ liệu SEO).
-- **Giao diện:** sửa CSS trong `assets/css/` hoặc CSS riêng trong `components/<tên-khối>/`.
+- **Thông tin sản phẩm:** sửa trang tương ứng trong `san-pham/`. Thay tên, mô tả, ảnh và giá nhất quán trong nội dung trang và block `application/ld+json` (dữ liệu SEO).
+- **Giao diện:** sửa CSS trong `assets/css/` hoặc CSS riêng trong `components/<tên-block>/`.
 - **Hình ảnh:** đặt ảnh vào `assets/images/desktop/` hoặc `assets/images/mobile/`, rồi cập nhật đường dẫn trong HTML.
 - **Tương tác:** JavaScript nằm trong `assets/js/`; ví dụ carousel ở `hero-carousel.js`, popup ở `promotion-popup.js`.
 
