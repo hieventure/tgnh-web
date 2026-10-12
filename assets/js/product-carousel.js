@@ -12,11 +12,21 @@ document.querySelectorAll('[data-product-carousel]').forEach((carousel) => {
     next.hidden = !hasOverflow || track.scrollLeft >= maxScroll - 1;
   };
 
+  const scrollDistance = () => {
+    const cards = track.querySelectorAll(':scope > .product-card');
+    const isFlashSaleTablet = carousel.closest('.flash-sale')
+      && window.matchMedia('(min-width: 576px) and (max-width: 991.98px)').matches;
+
+    return isFlashSaleTablet && cards.length > 2
+      ? cards[2].offsetLeft - cards[0].offsetLeft
+      : track.clientWidth * 0.8;
+  };
+
   previous.addEventListener('click', () => {
-    track.scrollBy({ left: -track.clientWidth * 0.8, behavior: 'smooth' });
+    track.scrollBy({ left: -scrollDistance(), behavior: 'smooth' });
   });
   next.addEventListener('click', () => {
-    track.scrollBy({ left: track.clientWidth * 0.8, behavior: 'smooth' });
+    track.scrollBy({ left: scrollDistance(), behavior: 'smooth' });
   });
   track.addEventListener('scroll', updateControls, { passive: true });
   window.addEventListener('resize', updateControls);

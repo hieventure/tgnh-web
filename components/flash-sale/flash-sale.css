@@ -124,6 +124,13 @@
   font-size: 14px;
 }
 
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .flash-sale__background img { object-fit: cover; object-position: left center; }
+  .flash-sale__panel .product-carousel__track > .product-card {
+    flex-basis: calc((100% - 7px) / 2);
+  }
+}
+
 @media (max-width: 575.98px) {
   .flash-sale {
     padding-top: 20px;
