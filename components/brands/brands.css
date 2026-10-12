@@ -3,7 +3,7 @@
 .brand-title--mobile { display: none; }
 .brands .section-title h2 { text-transform: uppercase; }
 .brand-carousel { display: flex; width: 100vw; min-height: 124px; margin-left: calc(50% - 50vw); align-items: center; overflow: hidden; }
-.brand-carousel__track { display: flex; width: max-content; animation: brand-marquee 32s linear infinite; will-change: transform; }
+.brand-carousel__track { display: flex; width: max-content; animation: brand-marquee 64s linear infinite; will-change: transform; }
 .brand-cloud { display: flex; width: max-content; height: 53px; flex: none; align-items: stretch; }
 .brand-cloud__item { position: relative; display: flex; height: 53px; flex: none; align-items: center; justify-content: center; margin-inline: 12px; padding-inline: 12px; border: 1px solid transparent; transition: border-color 200ms ease, box-shadow 300ms ease; }
 .brand-cloud__item:hover { z-index: 1; outline: 2px solid #E33D8B; outline-offset: -2px; background: #fff; box-shadow: 0 3px 8px rgb(0 0 0 / 12%); }
@@ -21,5 +21,5 @@
   .brand-title--desktop { display: none; }
   .brand-title--mobile { display: inline; }
   .brand-carousel { min-height: 112px; }
-  .brand-carousel__track { animation-duration: 38s; }
+  .brand-carousel__track { animation-duration: 76s; }
 }

@@ -34,7 +34,11 @@
     title.textContent = 'Bộ sản phẩm độc quyền';
     bar.append(title);
 
-    filters.forEach(({ key, label, items }) => {
+    const activeFilters = container.closest('.elegance')
+      ? filters.filter(({ key }) => key !== 'category')
+      : filters;
+
+    activeFilters.forEach(({ key, label, items }) => {
       const dropdown = document.createElement('div');
       dropdown.className = `dropdown filter-dropdown filter-dropdown--${key}`;
 

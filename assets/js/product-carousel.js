@@ -13,6 +13,8 @@ document.querySelectorAll('[data-product-carousel]').forEach((carousel) => {
   };
 
   const scrollDistance = () => {
+    if (carousel.hasAttribute('data-carousel-page-step')) return track.clientWidth;
+
     const cards = track.querySelectorAll(':scope > .product-card');
     const isFlashSaleTablet = carousel.closest('.flash-sale')
       && window.matchMedia('(min-width: 576px) and (max-width: 991.98px)').matches;

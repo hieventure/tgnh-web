@@ -209,6 +209,76 @@ window.TGNH_MOCK_DATA = {
         "slug": "miss-saigon-elegance-cam",
         "image": "assets/images/desktop/83pd7jo4_expires_30_days.png",
         "alt": "Miss Saigon Elegance"
+      },
+      {
+        "slug": "miss-saigon-elegance",
+        "image": "assets/images/desktop/1cck7m3x_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
+        "alt": "BST Miss Saigon Elegance 15ml"
+      },
+      {
+        "slug": "lomani-blanca-fantasy",
+        "image": "assets/images/desktop/22pxjzb5_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/c35m131y_expires_30_days.png",
+        "alt": "Lomani Private Collection Blanca Fantasy"
+      },
+      {
+        "slug": "lomani-silver-bloom",
+        "image": "assets/images/desktop/qvribiyc_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
+        "alt": "Lomani Private Collection Silver Bloom",
+        "badge": "New"
+      },
+      {
+        "slug": "miss-saigon-elegance-cam",
+        "image": "assets/images/desktop/t8zs4hvo_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
+        "alt": "Miss Saigon Elegance Cam 50ml"
+      },
+      {
+        "slug": "parour-milas-secret",
+        "image": "assets/images/desktop/mapo76ih_expires_30_days.png",
+        "alt": "Parour Mila's Secret Find Your Way"
+      },
+      {
+        "slug": "miss-saigon-elegance-cam",
+        "image": "assets/images/desktop/83pd7jo4_expires_30_days.png",
+        "alt": "Miss Saigon Elegance"
+      },
+      {
+        "slug": "miss-saigon-elegance",
+        "image": "assets/images/desktop/1cck7m3x_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
+        "alt": "BST Miss Saigon Elegance 15ml"
+      },
+      {
+        "slug": "lomani-blanca-fantasy",
+        "image": "assets/images/desktop/22pxjzb5_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/c35m131y_expires_30_days.png",
+        "alt": "Lomani Private Collection Blanca Fantasy"
+      },
+      {
+        "slug": "lomani-silver-bloom",
+        "image": "assets/images/desktop/qvribiyc_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
+        "alt": "Lomani Private Collection Silver Bloom",
+        "badge": "New"
+      },
+      {
+        "slug": "miss-saigon-elegance-cam",
+        "image": "assets/images/desktop/t8zs4hvo_expires_30_days.png",
+        "mobile_image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
+        "alt": "Miss Saigon Elegance Cam 50ml"
+      },
+      {
+        "slug": "parour-milas-secret",
+        "image": "assets/images/desktop/mapo76ih_expires_30_days.png",
+        "alt": "Parour Mila's Secret Find Your Way"
+      },
+      {
+        "slug": "miss-saigon-elegance-cam",
+        "image": "assets/images/desktop/83pd7jo4_expires_30_days.png",
+        "alt": "Miss Saigon Elegance"
       }
     ],
     "exclusive": [

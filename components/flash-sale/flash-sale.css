@@ -5,9 +5,9 @@
   position: relative;
   display: grid;
   overflow: hidden;
-  padding: 79px 16px 21px;
+  padding: 79px 16px 21px 0;
   grid-template-columns: 285px minmax(0, 1fr);
-  gap: 7px;
+  gap: 0;
   border-radius: 6px;
 }
 .flash-sale__background {
@@ -124,7 +124,13 @@
   font-size: 14px;
 }
 
+@media (min-width: 576px) {
+  .flash-sale__panel .product-carousel { margin-left: -4px; }
+}
+
 @media (min-width: 576px) and (max-width: 991.98px) {
+  .flash-sale__panel { grid-template-columns: 315px minmax(0, 1fr); }
+  .flash-sale__panel .product-carousel { margin-left: 0; }
   .flash-sale__background img { object-fit: cover; object-position: left center; }
   .flash-sale__panel .product-carousel__track > .product-card {
     flex-basis: calc((100% - 7px) / 2);
