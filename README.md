@@ -1,3 +1,7 @@
+## Bản bàn giao mới
+
+Thư mục `production/` là bản frontend tĩnh mới nhất. Mở `production/index.html` trực tiếp trong trình duyệt để xem; CSS, JavaScript và ảnh nằm trong `production/assets/`. Nội dung ở thư mục gốc là bản website cũ.
+
 ## Repo gồm những gì?
 
 ```text
