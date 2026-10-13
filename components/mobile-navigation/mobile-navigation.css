@@ -1,9 +1,0 @@
-.mobile-navigation { position: fixed; z-index: 50; right: 0; bottom: 0; left: 0; display: grid; padding: 8px 12px calc(8px + env(safe-area-inset-bottom)); grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); background: #fff; box-shadow: 0 -2px 8px rgb(0 0 0 / 8%); }
-.mobile-navigation__link { display: flex; flex-direction: column; align-items: center; gap: 3px; color: #b5869c; font-size: 9px; }
-.mobile-navigation__link img { width: 24px; height: 24px; object-fit: contain; opacity: .65; }
-.mobile-navigation__link.is-active { color: var(--pink); }
-.mobile-navigation__link.is-active img { opacity: 1; }
-
-@media (min-width: 992px) {
-  .mobile-navigation { display: none; }
-}
