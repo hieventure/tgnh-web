@@ -293,7 +293,7 @@ button { font: inherit; }
   color: #fff;
   background: var(--pink);
 }
-@media (min-width: 750px) and (max-width: 1199.98px),
+@media (min-width: 700px) and (max-width: 1199.98px),
        (min-width: 1200px) and (max-width: 1366px) and (any-pointer: coarse) {
   .flash-sale .content-container { width: 100%; background: #efd9de; }
   .flash-sale__logo { width: clamp(200px, 25vw, 290px); height: auto; }
@@ -321,7 +321,7 @@ button { font: inherit; }
   .flash-sale .mobile-explore { display: flex; padding: 23px 0; font-size: 13px; text-transform: uppercase; }
 }
 
-@media (max-width: 749.98px) {
+@media (max-width: 699.98px) {
   .flash-sale {
     padding: 20px 0 0;
     background: #efd9de;

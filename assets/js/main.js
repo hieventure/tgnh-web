@@ -462,7 +462,7 @@ document.querySelectorAll('[data-product-carousel]').forEach((carousel) => {
 
     const cards = track.querySelectorAll(':scope > .product-card');
     const isFlashSaleTablet = carousel.closest('.flash-sale')
-      && window.matchMedia('(min-width: 750px) and (max-width: 1199.98px)').matches;
+      && window.matchMedia('(min-width: 700px) and (max-width: 1199.98px)').matches;
 
     return isFlashSaleTablet && cards.length > 3
       ? cards[3].offsetLeft - cards[0].offsetLeft
