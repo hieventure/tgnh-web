@@ -167,145 +167,104 @@ window.TGNH_MOCK_DATA = {
         "eyebrow": "Sale"
       }
     ],
-    "favorites-mobile": [
+    "favorites": [
       {
         "slug": "signorina-misteriosa",
-        "name": "Calvin Klein Eternity Amber Essence Intense Parfum 30ml Eau de parfum",
         "image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
-        "alt": "Signoria",
-        "badge": "Chỉ còn 5 sp",
-        "eyebrow": "Sale"
+        "eyebrow": "Sale",
+        "badge": "Chỉ còn 5 sp"
       },
       {
         "slug": "paco-rabanne",
-        "name": "Nước hoa Ralph Lauren Romance EDP Intense 30ml Eau de parfum",
         "image": "assets/images/mobile/c35m131y_expires_30_days.png",
-        "alt": "Paco Rabanne",
         "eyebrow": "Sale"
       },
       {
         "slug": "moschino-toy-2",
-        "name": "Nước hoa Parour Cigar Mystic Scent EDT For Men 75ml Eau de toilette",
         "image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
-        "alt": "Moschino",
-        "badge": "Chỉ còn 1 ngày",
-        "eyebrow": "Sale"
+        "eyebrow": "Sale",
+        "badge": "Chỉ còn 1 ngày"
       },
       {
         "slug": "michael-kors-gorgeous",
         "image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
-        "alt": "Michael Kors Gorgeous",
         "eyebrow": "Sale"
-      }
-    ],
-    "favorites-desktop": [
+      },
+      {
+        "slug": "ferragamo-uomo",
+        "image": "assets/images/desktop/sz17nqrr_expires_30_days.png",
+        "eyebrow": "Sale"
+      },
       {
         "slug": "miss-saigon-elegance",
-        "name": "Calvin Klein Eternity Amber Essence Intense Parfum 30ml Eau de parfum",
-        "image": "assets/images/desktop/1cck7m3x_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
-        "alt": "BST Miss Saigon Elegance 15ml"
+        "image": "assets/images/desktop/wfymoxwt_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
         "slug": "lomani-blanca-fantasy",
-        "name": "Nước hoa Ralph Lauren Romance EDP Intense 30ml Eau de parfum",
-        "image": "assets/images/desktop/22pxjzb5_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/c35m131y_expires_30_days.png",
-        "alt": "Lomani Private Collection Blanca Fantasy"
+        "image": "assets/images/desktop/wb571nbe_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
         "slug": "lomani-silver-bloom",
-        "name": "Nước hoa Parour Cigar Mystic Scent EDT For Men 75ml Eau de toilette",
-        "image": "assets/images/desktop/qvribiyc_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
-        "alt": "Lomani Private Collection Silver Bloom",
+        "image": "assets/images/desktop/il97068b_expires_30_days.png",
+        "eyebrow": "Sale",
         "badge": "New"
       },
       {
         "slug": "miss-saigon-elegance-cam",
-        "image": "assets/images/desktop/t8zs4hvo_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
-        "alt": "Miss Saigon Elegance Cam 50ml"
+        "image": "assets/images/desktop/kd0gy827_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
         "slug": "parour-milas-secret",
-        "image": "assets/images/desktop/mapo76ih_expires_30_days.png",
-        "alt": "Parour Mila's Secret Find Your Way"
+        "image": "assets/images/desktop/4608ryf9_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
-        "slug": "miss-saigon-elegance-cam",
-        "image": "assets/images/desktop/83pd7jo4_expires_30_days.png",
-        "alt": "Miss Saigon Elegance"
+        "slug": "signorina-misteriosa",
+        "image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
+        "eyebrow": "Sale",
+        "badge": "Chỉ còn 5 sp",
+        "name": "Calvin Klein Eternity Amber Essence Intense Parfum 30ml Eau de parfum"
+      },
+      {
+        "slug": "paco-rabanne",
+        "image": "assets/images/mobile/c35m131y_expires_30_days.png",
+        "eyebrow": "Sale",
+        "name": "Nước hoa Ralph Lauren Romance EDP Intense 30ml Eau de parfum"
+      },
+      {
+        "slug": "moschino-toy-2",
+        "image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
+        "eyebrow": "Sale",
+        "badge": "Chỉ còn 1 ngày",
+        "name": "Nước hoa Parour Cigar Mystic Scent EDT For Men 75ml Eau de toilette"
+      },
+      {
+        "slug": "michael-kors-gorgeous",
+        "image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
+        "eyebrow": "Sale"
+      },
+      {
+        "slug": "ferragamo-uomo",
+        "image": "assets/images/desktop/sz17nqrr_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
         "slug": "miss-saigon-elegance",
-        "image": "assets/images/desktop/1cck7m3x_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
-        "alt": "BST Miss Saigon Elegance 15ml"
+        "image": "assets/images/desktop/wfymoxwt_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
         "slug": "lomani-blanca-fantasy",
-        "image": "assets/images/desktop/22pxjzb5_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/c35m131y_expires_30_days.png",
-        "alt": "Lomani Private Collection Blanca Fantasy"
+        "image": "assets/images/desktop/wb571nbe_expires_30_days.png",
+        "eyebrow": "Sale"
       },
       {
         "slug": "lomani-silver-bloom",
-        "image": "assets/images/desktop/qvribiyc_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
-        "alt": "Lomani Private Collection Silver Bloom",
-        "badge": "New"
-      },
-      {
-        "slug": "miss-saigon-elegance-cam",
-        "image": "assets/images/desktop/t8zs4hvo_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
-        "alt": "Miss Saigon Elegance Cam 50ml"
-      },
-      {
-        "slug": "parour-milas-secret",
-        "image": "assets/images/desktop/mapo76ih_expires_30_days.png",
-        "alt": "Parour Mila's Secret Find Your Way"
-      },
-      {
-        "slug": "miss-saigon-elegance-cam",
-        "image": "assets/images/desktop/83pd7jo4_expires_30_days.png",
-        "alt": "Miss Saigon Elegance"
-      },
-      {
-        "slug": "miss-saigon-elegance",
-        "image": "assets/images/desktop/1cck7m3x_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/vv0ybm55_expires_30_days.png",
-        "alt": "BST Miss Saigon Elegance 15ml"
-      },
-      {
-        "slug": "lomani-blanca-fantasy",
-        "image": "assets/images/desktop/22pxjzb5_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/c35m131y_expires_30_days.png",
-        "alt": "Lomani Private Collection Blanca Fantasy"
-      },
-      {
-        "slug": "lomani-silver-bloom",
-        "image": "assets/images/desktop/qvribiyc_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/mh8sonn3_expires_30_days.png",
-        "alt": "Lomani Private Collection Silver Bloom",
-        "badge": "New"
-      },
-      {
-        "slug": "miss-saigon-elegance-cam",
-        "image": "assets/images/desktop/t8zs4hvo_expires_30_days.png",
-        "mobile_image": "assets/images/mobile/xnnp1fij_expires_30_days.png",
-        "alt": "Miss Saigon Elegance Cam 50ml"
-      },
-      {
-        "slug": "parour-milas-secret",
-        "image": "assets/images/desktop/mapo76ih_expires_30_days.png",
-        "alt": "Parour Mila's Secret Find Your Way"
-      },
-      {
-        "slug": "miss-saigon-elegance-cam",
-        "image": "assets/images/desktop/83pd7jo4_expires_30_days.png",
-        "alt": "Miss Saigon Elegance"
+        "image": "assets/images/desktop/il97068b_expires_30_days.png",
+        "eyebrow": "Sale"
       }
     ],
     "exclusive": [
